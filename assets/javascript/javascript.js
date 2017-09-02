@@ -28,7 +28,7 @@ function myMovies2() {
     $(".jsonInfo").on("click", function () {
         $(".gifsHere").empty();
         var newMovie = $(this).html();
-        var movieUrl = "http://api.giphy.com/v1/gifs/search?q=" + newMovie + "&api_key=dc75eaa47ff2402cb92349f140f9aab2&limit=10"
+        var movieUrl = "https://api.giphy.com/v1/gifs/search?q=" + newMovie + "&api_key=dc75eaa47ff2402cb92349f140f9aab2&limit=10"
 
         $.ajax({
             url: movieUrl,

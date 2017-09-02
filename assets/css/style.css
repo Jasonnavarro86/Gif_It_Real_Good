@@ -1,72 +1,103 @@
 /* font-family: 'Libre Barcode 39 Text', cursive;
 font-family: 'Cinzel', serif; */
 
-
 body {
     background-image: url("https://i.pinimg.com/originals/99/70/f8/9970f85e3e3d885a53de0002c52868b3.jpg");
     background-size: 40%;
 }
+
+
 /* This section is the main continer with h1 and movie buttons. */
+
 .mainContainer {
     clear: both;
-    background-color: #000000;
-    color:#FFFFFF;
+    background-color: #181818;
+    color: #FFFFFF;
     font-size: 17px;
     font-weight: 700;
-    height:0%;
+    height: 0%;
     overflow: auto;
     font-family: 'Cinzel', serif;
 }
-h1{
+
+h1 {
     margin-bottom: 20px;
     text-align: center;
     font-family: 'Libre Barcode 39 Text', cursive;
-    font-size: 60px; 
+    font-size: 60px;
     font-weight: 700;
+    margin-left: 15%;
 }
-h2{
-text-align: center;
-margin-bottom: 30px;
-font-family: 'Cinzel', serif;
-font-size: 60px; 
-font-weight: 900;
 
-
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Cinzel', serif;
+    font-size: 60px;
+    font-weight: 900;
+    margin-left: 15%;
 }
-button.btn{
+
+button.btn {
     color: white;
-    background-color: #83FF00;
+    background-color: #FE0C0F;
     text-align: center;
     font-size: 20px;
     margin-left: 27px;
     margin-bottom: 17px;
+    font-weight: bold;
 }
+button {
+    margin: 5px;
+}
+
+button.btn:hover {
+    background-color: #FF585B;
+}
+
+button.btn:active {
+    outline: none;
+}
+
+button.btn:link {
+    outline: none;
+}
+button.btn:visited {
+    outline: none;
+}
+
 .one {
     margin-bottom: 60px;
 }
+
+
 /* This is my second div with the form / input area. */
+
 .two {
     float: right;
     max-width: 20%;
 }
-label{
-    margin-bottom:5px;
-    
+
+label {
+    margin-bottom: 5px;
 }
-input{
-    margin-bottom:5px;
-    
+
+input {
+    margin-bottom: 5px;
 }
 
 .three {
     max-width: 80%;
- 
 }
 
 img.gifAnimate {
     max-width: 50%;
-    border: 2px solid #FFFFFF;
+    border: 5px solid #302D2D;
     margin-right: 10px;
     margin-bottom: 10px;
-    
+}
+
+.mickey {
+    float: right;
+    margin-right: 55px;
 }

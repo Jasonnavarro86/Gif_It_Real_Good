@@ -102,3 +102,12 @@ img.gifAnimate {
     margin-right: 10px;
     margin-bottom: 10px;
 }
+/* This is my instructions for the start of the user experience.*/
+.hideMe{
+    text-align: center;
+    font-size: 35px;
+    margin-top:10%;
+    margin-right:33%;
+    color: #FF0000;
+    
+}

@@ -1,6 +1,7 @@
 var giphyMagic = {
-
+// This is the array holding all the movie buttons.
     myMovies: ["aladdin", "lion king", "mulan", "beauty and the beast", "moana", "toy story", "the jungle book"],
+    // This function() creates the movie buttons and is called everytime a new movie is added. 
     makeButtons: function () {
         $(".buttonsHere").empty();
         for (var i = 0; i < this.myMovies.length; i++) {
@@ -8,6 +9,7 @@ var giphyMagic = {
                 .html(this.myMovies[i]).appendTo(".buttonsHere")
         }
     },
+    // This function() pushes the users movie choice into the movie array and empties the input box. 
     pushIntoArray: function () {
         $(".searchButton").on("click", function () {
             event.preventDefault();
@@ -18,6 +20,7 @@ var giphyMagic = {
             giphyMagic.myMovies2();
         })
     },
+    // This function() calls the giphy API and puts the GIF's on the page when the movie buttons are clicked. 
     myMovies2: function () {
         $(".jsonInfo").on("click", function () {
             $(".gifsHere").empty();
@@ -52,6 +55,7 @@ var giphyMagic = {
         })
     },
 }
+// These are the three functions being called when the page loads. 
 giphyMagic.pushIntoArray();
 giphyMagic.makeButtons();
 giphyMagic.myMovies2();

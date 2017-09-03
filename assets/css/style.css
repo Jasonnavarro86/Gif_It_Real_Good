@@ -1,13 +1,15 @@
-/* font-family: 'Libre Barcode 39 Text', cursive;
-font-family: 'Cinzel', serif; */
+/* This is my backround img. */
 
 body {
     background-image: url("https://i.pinimg.com/originals/99/70/f8/9970f85e3e3d885a53de0002c52868b3.jpg");
     background-size: 40%;
 }
-
-
-/* This section is the main continer with h1 and movie buttons. */
+/* This is the mickey img. */
+.mickey {
+    float: right;
+    margin-right: 55px;
+}
+/* This section is the main continer with h1, h2, and movie buttons. */
 
 .mainContainer {
     clear: both;
@@ -38,6 +40,10 @@ h2 {
     margin-left: 15%;
 }
 
+button {
+    margin: 5px;
+}
+
 button.btn {
     color: white;
     background-color: #FE0C0F;
@@ -46,9 +52,6 @@ button.btn {
     margin-left: 27px;
     margin-bottom: 17px;
     font-weight: bold;
-}
-button {
-    margin: 5px;
 }
 
 button.btn:hover {
@@ -62,16 +65,17 @@ button.btn:active {
 button.btn:link {
     outline: none;
 }
+
 button.btn:visited {
     outline: none;
 }
 
+/* This is adding margin under the the movie buttons.*/
 .one {
     margin-bottom: 60px;
 }
 
-
-/* This is my second div with the form / input area. */
+/* This is my div with the form / input area. */
 
 .two {
     float: right;
@@ -86,6 +90,8 @@ input {
     margin-bottom: 5px;
 }
 
+
+/* This is the div holding the GIF's.*/
 .three {
     max-width: 80%;
 }
@@ -95,9 +101,4 @@ img.gifAnimate {
     border: 5px solid #302D2D;
     margin-right: 10px;
     margin-bottom: 10px;
-}
-
-.mickey {
-    float: right;
-    margin-right: 55px;
 }

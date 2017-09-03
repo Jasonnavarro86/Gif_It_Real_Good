@@ -1,6 +1,6 @@
 var giphyMagic = {
 // This is the array holding all the movie buttons.
-    myMovies: ["aladdin", "lion king", "mulan", "beauty and the beast", "moana", "toy story", "the jungle book"],
+    myMovies: ["moana", "frozen", "tangled", "the lion king" ,"mulan", "beauty and the beast", "the little mermaid", "the jungle book"],
     // This function() creates the movie buttons and is called everytime a new movie is added. 
     makeButtons: function () {
         $(".buttonsHere").empty();

@@ -7,7 +7,7 @@ body {
 /* This is the mickey img. */
 .mickey {
     float: right;
-    margin-right: 55px;
+    margin-right: 130px;
 }
 /* This section is the main continer with h1, h2, and movie buttons. */
 
@@ -20,6 +20,7 @@ body {
     height: 0%;
     overflow: auto;
     font-family: 'Cinzel', serif;
+  
 }
 
 h1 {
@@ -39,6 +40,23 @@ h2 {
     font-weight: 900;
     margin-left: 15%;
 }
+
+/* Add animation to the disney text. */
+#disneyH2{
+    animation: text1 0.5s infinite;
+}
+
+@keyframes text1{
+    
+    0%{ color: #39FF00; }
+    20%{ color: #FF0000; }
+    40%{ color: #2A00FF; }
+    60%{ color: #FF00F6; }
+    80%{ color: #FFFC00; }
+    100%{ color: #FF0082; }
+    
+    
+    }
 
 button {
     margin: 5px;
@@ -101,6 +119,20 @@ img.gifAnimate {
     border: 5px solid #302D2D;
     margin-right: 10px;
     margin-bottom: 10px;
+    animation: border1 0.5s infinite;
+}
+
+/* adding animation to my boarders. */
+@keyframes border1{
+
+0%{ border: 5px solid #39FF00; }
+20%{ border: 5px solid #FF0000; }
+40%{ border: 5px solid #2A00FF; }
+60%{ border: 5px solid #FF00F6; }
+80%{ border: 5px solid #FFFC00; }
+100%{ border: 5px solid #FF0082; }
+
+
 }
 /* This is my instructions for the start of the user experience.*/
 .hideMe{
@@ -124,3 +156,5 @@ img.gifAnimate {
 h3{
     margin-bottom: 8px;
 }
+
+

@@ -66,11 +66,7 @@ var giphyMagic = {
                         }
                     })
                     newImg.appendTo(".spot" + i);
-
                     $("<h3>").html("Rating: "+ myRating).appendTo(".spot" + i);
-
-                    console.log(myRating);
-
                 }
             })
         })

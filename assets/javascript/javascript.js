@@ -1,7 +1,7 @@
 // My object for the game.
 var giphyMagic = {
     // Property 1: This is the array holding all the movie buttons.
-    myMovies: ["moana", "frozen", "tangled", "the lion king", "mulan", "beauty and the beast", "the little mermaid", "the jungle book"],
+    myMovies: ["moana", "aladdin", "tangled", "the lion king", "mulan", "beauty and the beast", "the little mermaid", "the jungle book"],
 
     // Property 2: This function() creates the movie buttons and is called everytime a new movie is added. 
     makeButtons: function () {

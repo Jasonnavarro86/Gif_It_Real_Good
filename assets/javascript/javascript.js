@@ -34,7 +34,7 @@ var giphyMagic = {
 
         $(".jsonInfo").on("click", function () {
             $(".hideMe").hide()
-            $(".gifsHere").empty();
+            $(".theEmpty").empty();
 
             var newMovie = $(this).html();
 
@@ -44,9 +44,11 @@ var giphyMagic = {
                 url: movieUrl,
                 method: "GET"
             }).done(function (result) {
-
+                
                 var jsonGif = result
                 for (var i = 0; i < result.data.length; i++) {
+                     var myRating = result.data[i].rating;
+                     
 
                     var newImg = $("<img>")
                     newImg.addClass("col btn gifAnimate")
@@ -63,7 +65,12 @@ var giphyMagic = {
                             $(this).attr("src", $(this).data("still"))
                         }
                     })
-                    newImg.appendTo(".gifsHere");
+                    newImg.appendTo(".spot" + i);
+
+                    $("<h3>").html("Rating: "+ myRating).appendTo(".spot" + i);
+
+                    console.log(myRating);
+
                 }
             })
         })

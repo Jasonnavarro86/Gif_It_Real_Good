@@ -49,7 +49,6 @@ var giphyMagic = {
                 for (var i = 0; i < result.data.length; i++) {
                      var myRating = result.data[i].rating;
                      
-
                     var newImg = $("<img>")
                     newImg.addClass("col btn gifAnimate")
                     newImg.attr("src", result.data[i].images.fixed_height_still.url)
